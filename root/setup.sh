@@ -12,7 +12,7 @@ _readvar() {
 
 _adduser() {
 	echo "Adding user $NEWUSER"
-	useradd -m -g wheel $1
+	useradd -m -G wheel $1
 }
 
 _add_authorized_key() {
