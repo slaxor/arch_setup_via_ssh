@@ -36,7 +36,7 @@ _collapse_self() {
 }
 
 _protect_root() {
-	sed -i -e 's/root::/root:!:' /etc/passwd
+	sed -i -e 's/root::/root:!:/' /etc/passwd
 }
 
 _readvar "What username do you want to login with? " NEWUSER
